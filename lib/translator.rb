@@ -1,5 +1,6 @@
 # require modules here
-
+require 'yaml'
+require 'pry'
 def load_library(filepath)
   get_emoticon = {}
   get_meaning = {}
