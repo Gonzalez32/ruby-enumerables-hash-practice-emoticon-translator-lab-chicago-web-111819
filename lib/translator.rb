@@ -3,7 +3,7 @@
 def load_library(filepath)
   get_emoticon = {}
   get_meaning = {}
-  YAML.load_file(path).each do |k, v|
+  YAML.load_file(filepath).each do |k, v|
     get_meaning[v[1]] = k
     get_emoticon[v[0]] = v[1]
   end
